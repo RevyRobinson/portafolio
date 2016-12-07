@@ -1,11 +1,14 @@
 *{
 	text-align: center;
 }
-#title-site h1 {
+.title-site {
+	margin-top: 25px;
+}
+.title-site h1 {
 	font-size: 30px;
 	font-family: Raleway;
 }
-#title-site p {
+.title-site p {
 	font-size: 20px;
 	font-weight: lighter;
 }
@@ -13,4 +16,40 @@
 	width: 50%;
 	height: 2px;
 	background-color: black; 
+}
+.nav {
+	margin-top: 15px;
+}
+/*elevator speech*/
+.elev-speech {
+	height: 500px;
+}
+.bloque1 {
+	background-color: lightgray;
+}
+.bloque2 {
+	background-color: darkgray;
+}
+
+/*proyects*/
+
+.proyects {
+	height: 350px;
+}
+
+.proyect-img {
+	background-color: lightgray;
+}
+
+.proyect-desc {
+	background-color: darkgray;
+}
+
+/*knowledge*/
+
+.know {
+	height: 100px;
+	background-color: darkgray;
+	margin-top: 25px;
+	background-repeat: repeat-x;
 }
