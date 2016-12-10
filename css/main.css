@@ -1,6 +1,16 @@
 *{
 	text-align: center;
 }
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color: black;
+}
+body {
+	background-color: #FEEAEB;
+}
 .title-site {
 	margin-top: 25px;
 }
@@ -20,36 +30,154 @@
 .nav {
 	margin-top: 15px;
 }
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	background-color: #A53F42; 
+}
 /*elevator speech*/
+#elev-speech {
+padding-top: 100px;
+}
 .elev-speech {
 	height: 500px;
 }
 .bloque1 {
-	background-color: lightgray;
+	background-image: url(../img/pax.png);
+	background-size: cover;
 }
+.speech-1 {
+	padding-top:10%;
+	background-color: #A53F42;
+	border-right: 1px dotted white;
+	/*background-color: rgba(101, 23, 30, 0.5);*/
+	transition: all 0.5s ease; 
+	color: white;
+	height: 500px;
+}
+.speech-2 {
+	padding-top:10%;
+	background-color: #A53F42;
+	border-left: 1px dotted white;
+	/*background-color: rgba(101, 23, 30, 0.5);*/
+	transition: all 0.5s ease; 
+	color: white;
+	height: 500px;
+}
+
 .bloque2 {
-	background-color: darkgray;
+	background-image: url(../img/iker.png);
+	background-size: cover;
 }
 
 /*proyects*/
 
 .proyects {
-	height: 350px;
+	 overflow: hidden;
+	 height: 350px;
+}
+.proyects-content a {
+	 overflow: hidden;
+	 height: px;
+	 color: black;
+}
+.shrink img {
+	margin-left: -15%;
+	height: 400px;
+ 	width: 550px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.shrink img:hover {
+	margin-left:  -15%;
+	width: 650px;
+	height: 500px;
+}
+.img-container {
+	
+}
+.img-container:hover {
+	display: inline-block;
+	width: 100%;
+	transition: all 0.5s ease;
+}
+/*descripciones proyectos*/
+
+.tab-content {
+	padding-top: 20px;
+	color: white;
+}
+.tab-content button {
+}
+.tab-content a{
+	display: inline-block;
+	background-color: #EBB9BA;
+	padding-left:15%;
+	padding-right: 15%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 40%;
+	border: 1px solid #EBB9BA;
+}
+.tab-content a:hover{
+	text-decoration: none;
+	display: inline-block;
+	background-color: #EBB9BA;
+	padding-left:15%;
+	padding-right: 15%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 40%;
+	border: 1px solid #EBB9BA;
+}
+.tab-group: {
+  list-style: none;
+}
+#desc {
+	background-color: #a53f42;
+	padding-top: 3%;
+	height: 200px;
+}
+#desc2{
+	display: none;
+	background-color: #a53f42;
+	padding-top: 3%;
+	height: 200px;
+}
+#desc3{
+	display: none;
+	background-color: #a53f42;
+	padding-top: 3%;
+	height: 200px;
+}
+#desc4{
+	display: none;
+	background-color: #a53f42;
+	padding-top: 3%;
+	height: 200px;
 }
 
-.proyect-img {
-	background-color: lightgray;
-}
-
-.proyect-desc {
-	background-color: darkgray;
-}
 
 /*knowledge*/
 
 .know {
-	height: 100px;
-	background-color: darkgray;
-	margin-top: 25px;
+	height: 150px;
+	background-image: url(../img/knowledge.png);
 	background-repeat: repeat-x;
+	background-size: inherit;
+	margin-top: 25px;
+	background-repeat: no-repeat;
+	overflow-y:auto;
+	overflow-x: hidden;
 }
+
+/*skills*/
+.skills {
+	height: 150px;
+	background-color: lightgray;
+}
+
