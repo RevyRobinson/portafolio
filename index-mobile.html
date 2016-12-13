@@ -19,7 +19,11 @@
 					
 				</div>
 				<div role="navigation" class="navbar navbar-light col-sm-offset-6 col-sm-4 ">
-					<ul class="nav navbar-nav">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<i class="fa fa-bars fa-3x" aria-hidden="true" ></i>
+					</button>
+					<ul class="nav navbar-nav collapse navbar-collapse" id="navbar">
 						<li class="nav-item active"><a href="#">Inicio</a></li>
 						<li class="nav-item"><a href="#proyects">Proyectos</a></li>
 						<li class="nav-item"><a href="#knowledge">Conocimientos y Habilidades</a></li>
@@ -32,36 +36,13 @@
 	<section id="elev-speech">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="title-site col-sm-offset-3 col-sm-6">
-					<h1>La Definición</h1>
-					<hr class="line-title"/>
-					<p>de genialidad</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 elev-speech bloque1">
-					<div class="row">
-						<div class="col-sm-6 col-sm-offset-6 speech-left animated fadeInLeftBig">
-							<div class="speech-left-img animated fadeInLeftBig">
-							</div>
-							<div class="speech-inner">
-							<p>Una creatividad que aflora constantemente en el diseño de historias, personajes y mundos de fantasía. Ideando siempre nuevas soluciones e innovación desde el punto de vista artístico.</p>
-						</div>
-						</div>
+				<div class="mobile-version col-xs-12">
+					<div class="speech-left-img ">
 					</div>
-				</div>
-				<div class="col-sm-6 elev-speech bloque2">
-					<div class="row">
-						<div id="elev-speech-bloque-1" class="col-sm-6 speech-right animated fadeInRightBig">
-							<div class="speech-inner"><p class="title">Ninoska Vásquez Gaete</p>
+					<div class="speech-inner">
+						<p class="title">Ninoska Vásquez Gaete</p>
 							<p>Una persona autodidacta y proactiva, con una gran capacidad de liderazgo, un buen trato con la gente y un espíritu positivo que refuerza el trabajo en equipo.</p>
-						</div>
-							<div class="speech-right-img animated fadeInRightBig">
-							</div>
-						</div>
-							<div id="elev-speech-bloque-1" class="col-sm-6  speech-right-imgfondo animated fadeInRightBig ">
-							
-						</div>
+							<p>Una creatividad que aflora constantemente en el diseño de historias, personajes y mundos de fantasía. Ideando siempre nuevas soluciones e innovación desde el punto de vista artístico.</p>
 					</div>
 				</div>
 			</div>
@@ -76,52 +57,28 @@
 				</div>
 			</div>
 			<div class="row">
-				<ul class="tab-group" id="primer-tab">
-					<li class="tab active col-sm-2 proyects shrink">
-						<a href="#desc">
-							<img src="img/cinema.jpg" class="">
-
-						</a>
-					</li>
-					<li class="tab col-sm-2 proyects shrink">
-						<a href="#desc2">
-							<img src="img/bunny.jpg" class="">
-						</a>
-					</li>
-					<li class="tab col-sm-2 proyects shrink">
-						<a href="#desc3">
-							<img src="img/creamie.jpg" class="">
-						</a>
-					</li>
-					<li class="tab col-sm-2 proyects shrink">
-						<a href="#desc4">
-							<img src="img/natura.jpg" class="">
-						</a>
-					</li>
-
-					<div class="col-sm-4 proyects-content tab-content">
-						<div id="desc">
-							<h1>Cinema Page</h1>
-							<p>Descubriendo el sistema de Grid y recreando una estructura de página web</p>
-							<a target="_blank" href="https://revyrobinson.github.io/cinema/index.html">Ir al Sitio</a>
-						</div>
-						<div id="desc2">
-							<h1>Bunny Love</h1>
-							<p>Organizando y armando un layout con uso de Media Query</p>
-							<a target="_blank" href="https://revyrobinson.github.io/bunny-love/index.html">Ir al Sitio</a>
-						</div>
-						<div id="desc3">
-							<h1>Creamie Theme</h1>
-							<p>Una mirada al diseño responsivo</p>
+				<div class="mobile-version col-xs-6 mb-proyect-img">
+					<h2>Cinema</h2>
+					<hr class="line-title"/>
+					<a target="_blank" href="https://revyrobinson.github.io/cinema/index.html">Ir al Sitio</a>
+				</div>
+				<div class="col-xs-6 mb-proyect-img img-2">
+					<h2>Bunny Love</h2>
+					<hr class="line-title"/>
+					<a target="_blank" href="https://revyrobinson.github.io/bunny-love/index.html">Ir al Sitio</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 mb-proyect-img img-3">
+					<h2>Creamie Theme</h2>
+					<hr class="line-title"/>
 							<a target="_blank" href="https://revyrobinson.github.io/creamy-theme/index.html">Ir al Sitio</a>
-						</div>
-						<div id="desc4">
-							<h1>Puerto Natura</h1>
-							<p>Mi primer trabajo para un cliente real, con el uso activo de Joomla 3 y Bootstrap</p>
+				</div>
+				<div class="col-xs-6 mb-proyect-img img-4">
+					<h2>Puerto Natura</h2>
+					<hr class="line-title"/>
 							<a target="_blank" href="http://puertonatura.cl">Ir al Sitio</a>
-						</div>
-					</div>
-				</ul>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -136,20 +93,7 @@
 
 				</div>
 			</div>
-			<!--<div class="row">
-				<div class="col-sm-3 know ">
-					knowledge 
-				</div>
-				<div class=" col-sm-3 know ">
-					knowledge 
-				</div>
-				<div class=" col-sm-3 know ">
-					knowledge 
-				</div>
-				<div class=" col-sm-3 know ">
-					knowledge 
-				</div>
-			</div>-->
+			
 		</div>
 	</section>
 	<section id="skills">

@@ -30,6 +30,10 @@ body {
 .nav {
 	margin-top: 15px;
 }
+header i {
+	color: white;
+	font-size: 40px;
+}
 header {
 	width: 100%;
 	position: fixed;
@@ -37,53 +41,53 @@ header {
 	background-color: #A53F42; 
 }
 /*elevator speech*/
+
+.title {
+	font-size: 30px;
+}
+
 #elev-speech {
 padding-top: 100px;
 }
 .elev-speech {
 	height: 500px;
+	color: white;
 }
 .bloque1 {
 	background-image: url(../img/pax.png);
 	background-size: cover;
 }
-.speech-1 {
-	background-color: #A53F42;
-	border-right: 1px dotted white;
-	/*background-color: rgba(101, 23, 30, 0.5);*/
-	transition: all 0.5s ease; 
+.speech-left {
+	/*background-color: #A53F42;*/
 	color: white;
 	height: 500px;
+	padding-right: 0px;
+	padding-left: 0px;
 }
 .speech {
 	height: 250px;
 }
-.speech-1 p{
-	padding-top: 20%;
-}
-.speech-1-2 {
-	width: 120%;
-	margin-left: -15px;
+
+.speech-left-img {
 	background-image: url(../img/quinn.png);
 	background-size: cover;
 	/*background-color: #A0585A;*/
 	background-color: rgba(101, 23, 30, 0.5);
-	color: white;
 	height: 250px;
 }
-.speech-2 {
-	padding-top:5%;
+.speech-right {
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 250px;
+}
+.speech-inner {
+	padding-left: 2%;
+	padding-right: 2%;
 	background-color: #A53F42;
-	border-left: 1px dotted white;
-	/*background-color: rgba(101, 23, 30, 0.5);*/
-	transition: all 0.5s ease; 
-	color: white;
 	height: 250px;
+	padding-top: 80px;
 }
-.speech-2 p {
-	padding-bottom: 10%;
-}
-.speech-3 {
+.speech-right-imgfondo {
 	background-image: url(../img/stawea.jpg);
 	background-size: cover;
 	background-color: #A0585A;
@@ -91,14 +95,11 @@ padding-top: 100px;
 	color: white;
 	height: 500px;
 }
-.speech-4 {
-	width: 120%;
+.speech-right-img {
 	margin-left: -15px;
 	background-image: url(../img/scott.png);
 	background-size: cover;
 	/*background-color: #A0585A;*/
-	background-color: rgba(101, 23, 30, 0.5);
-	color: white;
 	height: 250px;
 }
 .bloque2 {
@@ -108,9 +109,7 @@ padding-top: 100px;
 .speech {
 	height: 250px;
 }
-.speech-img-bll{
-	height: 100%;
-}
+
 
 
 /*proyects*/
@@ -276,4 +275,32 @@ footer a {
 footer img {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+/*MOBILE: la clase empieza acon un "mb" al inicio*/
+@media (max-width: @screen-xs-max) {
+.speech-inner {
+	color: white;
+	height: 350px;
+}
+.mb-proyect-img {
+	background-image: url(../img/cinema.jpg);
+	background-size: cover;
+	color: white;
+}
+.img-2 {
+	background-image: url(../img/bunny.jpg);
+}
+.img-3 {
+	background-image: url(../img/creamie.jpg);
+}
+.img-4 {
+	background-image: url(../img/natura.jpg);
+}
+.mb-proyect-img a {
+	color: black;
+	background-color: #EBB9BA;
+	border: 1px solid transparent;
+	margin-bottom: 10px;
+}
 }
