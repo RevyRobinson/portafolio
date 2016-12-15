@@ -1,5 +1,9 @@
 *{
 	text-align: center;
+	font-family: Raleway;
+}
+h1 {
+	font-family: Didact Gothic;
 }
 a{
 	text-decoration: none;
@@ -13,6 +17,7 @@ body {
 }
 .title-site {
 	margin-top: 25px;
+	margin-bottom: 25px;
 }
 .title-site h1 {
 	font-size: 30px;
@@ -123,10 +128,12 @@ padding-top: 100px;
 	 height: px;
 	 color: black;
 }
+
+
 .shrink img {
 	margin-left: ;
-	height: 270px;
- 	width: 400px;
+ 	width: 250px;
+	height: 350px;
   -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
        -o-transition: all 1s ease;
@@ -135,8 +142,8 @@ padding-top: 100px;
 }
 .shrink img:hover {
 	margin-left: ;
-	height: 370px;
-	width: 500px;
+	width: 350px;
+	height: 450px;
 }
 .img-container {
 	
@@ -157,23 +164,28 @@ padding-top: 100px;
 .tab-content a{
 	display: inline-block;
 	background-color: #EBB9BA;
-	padding-left:15%;
-	padding-right: 15%;
+	padding-left:5%;
+	padding-right: 5%;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	width: 40%;
 	border: 1px solid #EBB9BA;
+	font-weight: bold;
+	transition: all 0.5s ease;
 }
 .tab-content a:hover{
 	text-decoration: none;
 	display: inline-block;
-	background-color: #EBB9BA;
-	padding-left:15%;
-	padding-right: 15%;
+	background-color: #FEEAEB;
+	padding-left:5%;
+	padding-right: 5%;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	width: 40%;
-	border: 1px solid #EBB9BA;
+	border: 1px solid #FEEAEB;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.5s ease;
 }
 .tab-group: {
   list-style: none;
@@ -210,7 +222,7 @@ padding-top: 100px;
 	background-image: url(../img/knowledge.png);
 	background-repeat: repeat-x;
 	background-size: inherit;
-	margin-top: 25px;
+	margin-top: 35px;
 	background-repeat: no-repeat;
 	overflow-y:auto;
 	overflow-x: hidden;
@@ -221,7 +233,8 @@ padding-top: 100px;
 	height: 200px;
 	color: white;
 	background-color: #7C3739;
-	padding-top: 3%;
+	padding-top:3%;
+	padding-bottom: 3%;
 }
 .skills span {
 	font-size: 30px;
@@ -278,7 +291,17 @@ footer img {
 }
 
 /*MOBILE: la clase empieza acon un "mb" al inicio*/
-@media (max-width: @screen-xs-max) {
+@media (max-width: 768px) {
+	.navbar-nav>li>a {
+		text-transform: uppercase;
+	}
+	.navbar-nav>li>a:hover {
+		text-transform: uppercase;
+	}
+	.flag {
+		margin-left: auto;
+		margin-right: auto;
+	}
 .speech-inner {
 	color: white;
 	height: 350px;
@@ -287,6 +310,9 @@ footer img {
 	background-image: url(../img/cinema.jpg);
 	background-size: cover;
 	color: white;
+	padding: 0px;
+	height: 150px;
+	margin-bottom: 20px;
 }
 .img-2 {
 	background-image: url(../img/bunny.jpg);
@@ -297,10 +323,28 @@ footer img {
 .img-4 {
 	background-image: url(../img/natura.jpg);
 }
-.mb-proyect-img a {
+.mb-inner-proyect a {
+	display: block;
 	color: black;
 	background-color: #EBB9BA;
 	border: 1px solid transparent;
 	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 90%;
+}
+.mb-inner-proyect {
+	background-color: #A0585A;
+	color: white;
+	height: 150px;
+}
+.mb-proyect-img h3{
+	height: 50px;
+}
+.skills {
+	height: 170px;
+	padding-top: 5%;
 }
 }
